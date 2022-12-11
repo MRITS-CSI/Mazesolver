@@ -125,6 +125,14 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
+    public void DestroyCurrentMaze()
+    {
+        foreach(Transform child in transform)
+        {
+            DestroyImmediate(child.gameObject);
+        }
+    }
+
     IEnumerator IGenerateMaze(Vector2Int size)
     {
         List<MazeNode> nodes = new List<MazeNode>();
@@ -145,7 +153,7 @@ public class MazeGenerator : MonoBehaviour
         List<MazeNode> completedNodes = new();
 
         currentPath.Add(nodes[Random.Range(0, nodes.Count)]);
-        currentPath[0].SetState(NodeState.Current);
+        //currentPath[0].SetState(NodeState.Current);
 
         while (completedNodes.Count < nodes.Count)
         {
@@ -219,13 +227,13 @@ public class MazeGenerator : MonoBehaviour
                 }
 
                 currentPath.Add(cNode);
-                cNode.SetState(NodeState.Current);
+                //cNode.SetState(NodeState.Current);
             }
 
             else
             {
                 completedNodes.Add(currentPath[^1]);
-                currentPath[^1].SetState(NodeState.Passed);
+                //currentPath[^1].SetState(NodeState.Passed);
                 currentPath.RemoveAt(currentPath.Count - 1);
             }
 
