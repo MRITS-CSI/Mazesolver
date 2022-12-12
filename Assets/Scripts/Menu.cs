@@ -32,7 +32,7 @@ public class Menu : MonoBehaviour
 
         yield return request.SendWebRequest();
 
-        switch(request.result)
+        switch (request.result)
         {
             case UnityWebRequest.Result.InProgress:
                 break;
@@ -50,7 +50,7 @@ public class Menu : MonoBehaviour
 
                 Cursor.visible = false;
 
-                SceneManager.LoadScene(string.Format("Maze1", sceneNumber));
+                SceneManager.LoadScene(string.Format("Maze{0}", sceneNumber));
 
                 break;
             default:
@@ -86,7 +86,9 @@ public class Menu : MonoBehaviour
 
         StartCoroutine(PostData(datatosend));
 
+        Cursor.visible = false;
 
+        SceneManager.LoadScene(string.Format("Maze1"));
 
 
 
@@ -107,9 +109,9 @@ public class Menu : MonoBehaviour
 
 
 
-        //Debug.Log("Matched");
+        Debug.Log("Matched");
 
-        
+
     }
 }
 
