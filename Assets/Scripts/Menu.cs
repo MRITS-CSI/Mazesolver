@@ -50,7 +50,7 @@ public class Menu : MonoBehaviour
 
                 Cursor.visible = false;
 
-                SceneManager.LoadScene(string.Format("Maze1", sceneNumber));
+                SceneManager.LoadScene(string.Format("Maze2", sceneNumber));
 
                 break;
             default:

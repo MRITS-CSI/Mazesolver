@@ -31,7 +31,7 @@ public class GameOver : MonoBehaviour
 
         var z = new PatchCreate
         {
-            round2 = (60 * 30f) - PlayerPrefs.GetFloat("finishTime"),
+            round2 = (60 * 20f) - PlayerPrefs.GetFloat("finishTime"),
             isLogged = true
         };
 

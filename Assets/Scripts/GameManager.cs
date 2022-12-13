@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     public bool isGameOver = false;
     public float time = 0;
-    public float startingTime = 30 * 60f;
+    public float startingTime = 20 * 60f;
     bool isRed = false;
 
     public TMP_Text timeCounter;
