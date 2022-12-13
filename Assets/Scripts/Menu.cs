@@ -50,7 +50,7 @@ public class Menu : MonoBehaviour
 
                 Cursor.visible = false;
 
-                SceneManager.LoadScene(string.Format("Maze{0}", sceneNumber));
+                SceneManager.LoadScene(string.Format("Maze1", sceneNumber));
 
                 break;
             default:
@@ -87,8 +87,9 @@ public class Menu : MonoBehaviour
         StartCoroutine(PostData(datatosend));
 
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
-        SceneManager.LoadScene(string.Format("Maze1"));
+        //SceneManager.LoadScene(string.Format("Maze1"));
 
 
 

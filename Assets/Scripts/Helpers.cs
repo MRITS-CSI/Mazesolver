@@ -8,6 +8,6 @@ public class Helpers
     {
         int minutes = seconds / 60;
         int rSeconds = seconds % 60;
-        return string.Format("{0}:{1}", minutes, rSeconds.ToString("00"));
+        return string.Format("{0}:{1}", minutes.ToString("00"), rSeconds.ToString("00"));
     }
 }

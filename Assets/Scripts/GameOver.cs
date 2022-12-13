@@ -31,7 +31,7 @@ public class GameOver : MonoBehaviour
 
         var z = new PatchCreate
         {
-            round2 = PlayerPrefs.GetFloat("finishTime"),
+            round2 = (60 * 30f) - PlayerPrefs.GetFloat("finishTime"),
             isLogged = true
         };
 
@@ -66,6 +66,7 @@ public class GameOver : MonoBehaviour
                 break;
         }
 
+        animator.SetTrigger("IsLevelTime");
 
         yield return null;
     }
