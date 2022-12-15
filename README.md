@@ -1,7 +1,7 @@
 # Mazesolver (Trouve Ta Rue)
 
-<img src = "https://github.com/devicons/devicon/blob/master/icons/unity/unity-original.svg"> Unity&nbsp;
-<img src="https://github.com/devicons/devicon/blob/master/icons/csharp/csharp-original.svg"> C#
+<img src = "https://github.com/devicons/devicon/blob/master/icons/unity/unity-original.svg" width="10px" height = "10px"> Unity&nbsp;
+<img src="https://github.com/devicons/devicon/blob/master/icons/csharp/csharp-original.svg" width="10px" height = "10px"> C#
 
 ## Introduction
 *Trouve Ta Rue* (French for 'Find your way'), internally called Mazesolver, was round 2 of the Praestantia event conducted by the MRITS CSI student chapter in December 2022. All participants were given a procedurally generated maze that they needed to solve within 20 minutes.
